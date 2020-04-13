@@ -6,7 +6,7 @@ clear_screeng proc                    ; процедура очистки экрана
 	    mov ax, 0003h				  ; Очистить экран, установить поля BIOS, установить режим 3 (80х25).
 	    int 10h
         
-	    mov ax, 1112h			      ; установить стандартный шрифт 8х8
+	    mov ah, 1112h			      ; установить стандартный шрифт 8х8
 	    mov bl, 00h					  ; номер шрифта 
 	    int 10h
         
@@ -218,7 +218,7 @@ hFileOut        dw  0
 nFileSize_high  dw  0
 nFileSize_low   dw  0
 argc            dw  0
-BLOCK_SIZE      equ 1000h 
-file_buf        db  BLOCK_SIZE dup (?)
+file_buf        db  07D0h dup (?)
+BLOCK_SIZE      equ 07D0h 
 ;------------------------------------------------------------ENDD--------------------------------------------------------------------------;
 end start
