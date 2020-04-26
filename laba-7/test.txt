@@ -1,0 +1,5 @@
+C:\Users\pinky\Desktop\tet.exe;
+C:\Users\pinky\Desktop\laba-5\4_sample.exe;
+C:\emu8086\MyBuild\t\test\1_sample.exe;
+C:\emu8086\MyBuild\t\test\2_sample.exe;
+C:\emu8086\MyBuild\t\test\3_sample.exe;?
