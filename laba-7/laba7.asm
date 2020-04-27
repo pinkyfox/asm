@@ -199,8 +199,7 @@ currentPositionInFile   dw 0
 charBuffer              db 0
 exeFileNameSize         dw 0  
 isEndOfFile             db 0
-exeFileName             db 512 dup (0)  
-exeFileFolder           db 512 dup (0)    
+exeFileName             db 512 dup (0)     
 EPB                     dw 0000                 ;Использовать текущее окружение.
                         dw offset commandline, 0;Адрес командной строки.
                         dw 005Ch,0,006Ch,0      ;Адреса FCB, переданных DOS нашей программе при запуске (на самом деле они не используются).
